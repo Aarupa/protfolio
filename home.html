@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my protofilo</title>
+    <style>
+        body{
+        background-color: rgb(42, 42, 43);
+        /* background-image: url(https://i.gifer.com/J938.gif); */
+   
+        }
+
+        .navbar {
+            position:fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family:cursive
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+        } 
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        @keyframes move {
+            from {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        #home {
+            animation: move 1s ease-out;
+        }
+
+        h5{
+            margin-top: 5%;
+            color: blueviolet;
+            font-size: 2rem;
+            margin-left: 5%;
+            font-family:cursive
+        }
+
+        #home h2,h3{
+            color: rgb(245, 243, 243);
+            text-align: center;
+            transform: translate(20px,-50px);
+            font-family:cursive
+        }
+
+        #home img{
+            height: 300px;
+            width: 300px;
+            border-radius: 30%;
+            position: relative;
+            align-items: center;
+            transform: translate(460px,-50px);
+        }
+
+
+        #about{
+            margin-top: 240px;
+        }
+
+        #about h5,hr{
+            color: rgb(126, 128, 124);
+            font-size: 2rem;
+            text-align: center;
+            margin-left:10px;
+            width: 40%;
+            border: 3px solid rgb(62, 61, 61);
+            transform: translate(340px,-35px);
+            font-family:cursive
+        }
+
+        #about h2{
+            color: rgb(202, 202, 205);
+            text-align: center;
+            transform: translate(20px,-100px);
+        }
+
+        #about p{
+        color: rgb(178, 178, 181);
+        float: left;
+        transform: translate(0,40px);
+        margin-left: 50px;
+        width: 500px;
+        font-family:cursive
+        }
+
+        #about p:hover{
+            color: rgb(231, 223, 223);
+        }
+
+        #about img{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            position: relative;
+            transform: translate(100px,50px);
+        }
+
+        #project h6{
+            color: brown;
+            font-size: 2rem;
+            text-align: center;
+            align-items: center;
+            transform: translate(5px,150px);
+        }
+
+        #project hr{
+            margin-top: 400px;
+            transform: translate(350px,-200px);
+        }
+
+        #project #img{
+            display: inline;
+        }
+
+        #project img{
+            height: 200px;
+            width: 300px;
+            margin-left: 100px;
+            border: 10px solid rgb(76, 75, 73); 
+            transform: translate(-3px,-100px); 
+        }
+
+        #project aside{
+            width: 50%;
+            color:  rgb(70, 70, 71);
+            text-align: left;
+            transform: translate(500px,-320px);
+            font-family:cursive
+        }
+
+        #project aside:hover{
+            color: rgb(189, 189, 196);
+        }
+
+        #project button{
+            font-size: 1rem;
+            width: 100px;
+            height: 10%;
+            background-color: rgb(116, 3, 3);
+        } 
+
+        #project button:hover{
+            background-color: rgb(30, 30, 61);
+        }
+
+        #contact{
+            background-color: rgb(100, 98, 98);
+            width: 60%;
+            height: 300px;
+            justify-content: center;
+            margin-left:  200px;
+            align-items: center;
+            text-align: center;
+            transform: translate(50px ,-50px);
+            font-family:cursive
+        }
+
+        #contact h3{
+        font-size: 2rem;
+        }
+
+        #contact hr{
+            transform: translate(190px,-70px);
+        }
+
+        #contact form,label,input{
+            margin: 10px;
+        }
+
+        #contact button{
+            background-color: burlywood;
+            margin:  20px;
+            font-family:cursive
+        }
+
+        footer {
+            bottom: 1px;
+            position:absolute;
+            padding: 10px;
+            float: left;
+        }
+
+        footer a {
+            margin:0 10px;
+            text-decoration: none;
+        }
+
+
+        footer img{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            transform: translate(-10px,0px);
+        }
+
+
+
+        @media(max-width: 360px) {
+
+            body {
+            background-color: rgb(42, 42, 43);
+            }
+            .nav-links {
+            display: block;
+            text-align: center;
+            transform: translate(-2px,5px);
+            }
+        
+            .nav-links a {
+            display: inline;
+            margin:0 5px ;
+            }
+        
+            #home img {
+            height: 150px;
+            width: 150px;
+            border-radius: 15%;
+            transform: translate(100px,-20px);
+            }
+
+            h5{
+                font-size: 1rem;
+                margin-top: 50px;
+                margin-left: 10px;
+            }
+
+            #home h2,h3{
+                font-size: 1rem;
+            transform: translate(2px,-10px);
+            }
+        
+            #about {
+            margin-top: 20px;
+            }
+        
+            #about h5,
+            hr {
+            width: 70%;
+            margin-left:15%;
+            transform: none;
+            }
+        
+            #about h2,
+            #about p{
+            width: 70%;
+            font-size: 0.5rem;
+            transform: none;
+            }
+
+            #about img{
+                margin-left:0;
+                transform: translate(10px,10px);
+            }
+        
+            #project h6 {
+            transform: none;
+            }
+        
+            #project hr {
+            transform: translate(10px,-350px);
+            }
+        
+            #project img {
+            height: 100px;
+            width: 250px;
+            margin: 0 0 20px 40px ;
+            transform:translate(10px,-280px);
+            }
+        
+            #project aside {
+            width: 100%;
+            color: white;
+            transform:translate(10px,-300px);
+            }
+        
+            #project button {
+            width: 60%;
+            margin-left: 50px;
+            }
+        
+            #contact {
+            width: 90%;
+            margin-left: 0;
+            transform: translate(10px,-100px);
+            }
+        
+            #contact hr {
+            transform: none;
+            }
+        
+            #contact form,
+            label,
+            input {
+            margin: 10px 0 ;
+            }
+        
+            footer {
+            bottom: 0;
+            position: fixed;
+            text-align: center;
+            }
+        
+            footer img {
+            height: 20px;
+            width: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+    <section>
+    <header><h5>HEY FLOCKS</h5></header>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    </section>
+
+    <section>
+    <div id="home">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/p0vKSGf/image6.jpg" alt="image6" border="0" /></a>
+        <h2>Hii, I am Versatile</h2>
+        <h3>Wel-Come To My Portfolio</h3>
+    </div>
+    </section>
+
+    <section>
+    <div id="about">
+        <h5>About Me</h5>
+        <hr/>
+        <h2>I am Aarti Lahane </h2>
+        <p>Hello! I'm Aarti Shriram Lahane, a recent Computer Science graduate actively seeking exciting job opportunities. Armed with a strong foundation in C, Java, Python, and expertise in web technologies and database management, I am eager to contribute to an innovative organization. As a quick learner with a robust work ethic and leadership qualities, I aim to make a meaningful impact. Currently on the lookout for roles that align with my skills, I am enthusiastic about transitioning from academia to a dynamic professional environment. Let's connect and explore the possibilities together!</p>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="js"><br/>
+        <img src="https://www.svgrepo.com/show/184143/java.svg" alt="java">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
+        <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" alt="sql">
+    </div>
+    </section>
+    
+    <section>
+    <div id="project">
+        <h6>Project</h6>
+        <hr/>
+        <div id="img">
+        <a href="https://ibb.co/BwGXGnb"><img src="https://i.ibb.co/x3YpYFW/image2-jpg.png" alt="image2-jpg" border="0" /></a>
+        <aside><p><span> QuizHub</span> simplifies learning with user-friendly registration, allowing participants to select their preferred quiz topics. The platform offers a seamless quiz experience, complete with a clear scoring system. Upon completion, users receive automated certificates. Built securely on a reliable tech stack, QuizHub blends technology and design to create an engaging and educational quiz platform.</p>
+        <a href="https://github.com/Aarupa"><button>Learn more</button></a></aside>
+        <a href="https://ibb.co/YLWKPR3"><img src="https://i.ibb.co/CHtXm1z/image3.png" alt="image3" border="0" /></a>
+        <aside><p><span>Python CV Media</span>Empowering users with Python CV, our project captures photos and videos seamlessly. Utilizing computer vision technology, it provides a user-friendly interface for clicking pictures and recording videos. This project combines simplicity and functionality to enhance the media capture experience using Python.</p>
+        <a href="https://www.linkedin.com/posts/aarti-lahane-13oct02_imageprocessing-image-importing-activity-7094338277763117057-LK9g?utm_source=share&utm_medium=member_desktop"><button>Learn more</button></a></aside>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/7SYhnDB/image4.png" alt="image4" border="0" /></a>
+        <aside><p><span>Course Management System</span>Effortlessly manage courses with our system. Users register, navigate a streamlined interface, and choose courses tailored to their needs. This project simplifies the course selection process, enhancing the user experience in an intuitive and efficient manner.</p>
+        <a href="https://github.com/Aarupa"><button>Learn more</button></a></aside>
+        </div>
+    </section>
+
+
+
+    <section>
+    <div id="contact">
+        <h3>Let's Join</h3>
+        <hr/>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br/>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br/>
+            <label for="comment">comment:</label>
+            <input type="text" name="comment"><br>
+            <button>Sumbit</button>
+        </form>
+        <a href="https://drive.google.com/file/d/1ADPeN6IhSSwDTz4wCdLuexlr4FTCdiY_/view?usp=sharing"><button>Download CV</button></a>
+    </div>
+
+    </section>
+    <footer>
+        <div class="img">
+        <a href="https://www.linkedin.com/in/aarti-lahane-13oct02/"><img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="LinkedIn"></a>
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/Jp1J9cW/gitlogo.jpg" alt="gitlogo" border="0" /></a>
+        <a href="https://www.instagram.com/aaru_patil013/"><img src="https://img.freepik.com/premium-vector/black-circle-social-media-logo_197792-2899.jpg" alt="Instagram"></a>
+        <a href="https://twitter.com/AartiLahane1"><img src="https://e7.pngegg.com/pngimages/595/477/png-clipart-twitter-logo-computer-icons-logo-twitter-miscellaneous-monochrome.png" alt="Tweeter"></a>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
